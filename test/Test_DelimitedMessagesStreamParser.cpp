@@ -4,9 +4,6 @@
 
 #include <gtest/gtest.h>
 
-using TestTask::Messages::WrapperMessage;
-typedef DelimitedMessagesStreamParser<WrapperMessage> Parser;
-
 TEST(Parser, OneFastRequest)
 {
   list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
