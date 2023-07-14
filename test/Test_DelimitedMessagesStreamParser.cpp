@@ -56,7 +56,10 @@ TEST(Parser, OneSlowRequest)
 
   auto item = messages.front();
   ASSERT_TRUE(item->has_request_for_slow_response());
-  EXPECT_EQ(item->request_for_slow_response().time_in_seconds_to_sleep(), message.request_for_slow_response().time_in_seconds_to_sleep());
+  EXPECT_EQ(
+    item->request_for_slow_response().time_in_seconds_to_sleep(),
+    message.request_for_slow_response().time_in_seconds_to_sleep()
+  );
 }
 
 TEST(Parser, SomeSlowRequests)
@@ -80,7 +83,10 @@ TEST(Parser, SomeSlowRequests)
   for (auto &item : messages)
   {
     ASSERT_TRUE(item->has_request_for_slow_response());
-    EXPECT_EQ(item->request_for_slow_response().time_in_seconds_to_sleep(), message.request_for_slow_response().time_in_seconds_to_sleep());
+    EXPECT_EQ(
+      item->request_for_slow_response().time_in_seconds_to_sleep(),
+      message.request_for_slow_response().time_in_seconds_to_sleep()
+    );
   }
 }
 
@@ -110,7 +116,12 @@ TEST(Parser, SomeRequests)
   {
     ASSERT_TRUE(item->has_request_for_fast_response() || item->has_request_for_slow_response());
     if (item->has_request_for_slow_response())
-      EXPECT_EQ(item->request_for_slow_response().time_in_seconds_to_sleep(), slowRequest.request_for_slow_response().time_in_seconds_to_sleep());
+    {
+      EXPECT_EQ(
+        item->request_for_slow_response().time_in_seconds_to_sleep(),
+        slowRequest.request_for_slow_response().time_in_seconds_to_sleep()
+      );
+    }
   }
 }
 
@@ -128,7 +139,10 @@ TEST(Parser, OneFastResponse)
 
   auto item = messages.front();
   ASSERT_TRUE(item->has_fast_response());
-  EXPECT_EQ(item->fast_response().current_date_time(), message.fast_response().current_date_time());
+  EXPECT_EQ(
+    item->fast_response().current_date_time(),
+    message.fast_response().current_date_time()
+  );
 }
 
 TEST(Parser, SomeFastResponses)
@@ -152,7 +166,10 @@ TEST(Parser, SomeFastResponses)
   for (auto &item : messages)
   {
     ASSERT_TRUE(item->has_fast_response());
-    EXPECT_EQ(item->fast_response().current_date_time(), message.fast_response().current_date_time());
+    EXPECT_EQ(
+      item->fast_response().current_date_time(),
+      message.fast_response().current_date_time()
+    );
   }
 }
 
@@ -170,7 +187,10 @@ TEST(Parser, OneSlowResponse)
 
   auto item = messages.front();
   ASSERT_TRUE(item->has_slow_response());
-  EXPECT_EQ(item->slow_response().connected_client_count(), message.slow_response().connected_client_count());
+  EXPECT_EQ(
+    item->slow_response().connected_client_count(),
+    message.slow_response().connected_client_count()
+  );
 }
 
 TEST(Parser, SomeSlowResponses)
@@ -194,7 +214,10 @@ TEST(Parser, SomeSlowResponses)
   for (auto &item : messages)
   {
     ASSERT_TRUE(item->has_slow_response());
-    EXPECT_EQ(item->slow_response().connected_client_count(), message.slow_response().connected_client_count());
+    EXPECT_EQ(
+      item->slow_response().connected_client_count(),
+      message.slow_response().connected_client_count()
+    );
   }
 }
 
@@ -214,8 +237,11 @@ TEST(Parser, SomeResponses)
 
   size_t count = 5;
   std::string stream;
-  for (int i = 0; i < count; ++i)
-    stream.append(std::rand() % 2 > 0 ? std::string(fResData->begin(), fResData->end()) : std::string(sResData->begin(), sResData->end()));
+  for (int i = 0; i < (count + 1) / 2; ++i)
+    stream.append(std::string(fResData->begin(), fResData->end()));
+
+  for (int i = 0; i < count / 2; ++i)
+    stream.append(std::string(sResData->begin(), sResData->end()));
 
   messages = parser.parse(stream);
   ASSERT_EQ(count, messages.size());
@@ -224,9 +250,19 @@ TEST(Parser, SomeResponses)
   {
     ASSERT_TRUE(item->has_fast_response() || item->has_slow_response());
     if (item->has_fast_response())
-      EXPECT_EQ(item->fast_response().current_date_time(), fastResponse.fast_response().current_date_time());
+    {
+      EXPECT_EQ(
+        item->fast_response().current_date_time(),
+        fastResponse.fast_response().current_date_time()
+      );
+    }
     else
-      EXPECT_EQ(item->slow_response().connected_client_count(), slowResponse.slow_response().connected_client_count());
+    {
+      EXPECT_EQ(
+        item->slow_response().connected_client_count(),
+        slowResponse.slow_response().connected_client_count()
+      );
+    }
   }
 }
 
@@ -241,11 +277,8 @@ TEST(Parser, EmptyData)
 
 TEST(Parser, WrongData)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
-
-  messages = parser.parse("\x05parse");
-  EXPECT_EQ(0, messages.size());
+  EXPECT_THROW(parser.parse("\x05wrong"), std::runtime_error);
 }
 
 TEST(Parser, CorruptedData)
@@ -257,24 +290,12 @@ TEST(Parser, CorruptedData)
   message.mutable_fast_response()->set_current_date_time("0");
 
   auto data = serializeDelimited(message);
-  ASSERT_EQ("\x05\n\x03\n\x01""0",
-            std::string(data->begin(), data->end()));
 
   size_t count = 3;
   std::string stream;
   for (int i = 0; i < count; ++i)
     stream.append(std::string(data->begin(), data->end()));
 
-  ASSERT_EQ("\x05\n\x03\n\x01""0""\x05\n\x03\n\x01""0""\x05\n\x03\n\x01""0",
-            stream);
   stream[data->size()] = '\x03';
-
-  messages = parser.parse(stream);
-
-  ASSERT_EQ(2, messages.size());
-  for (auto &item : messages)
-  {
-    ASSERT_TRUE(item->has_fast_response());
-    EXPECT_EQ(item->fast_response().current_date_time(), message.fast_response().current_date_time());
-  }
+  EXPECT_THROW(parser.parse(stream), std::runtime_error);
 }
