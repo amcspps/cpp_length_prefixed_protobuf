@@ -275,6 +275,27 @@ TEST(Parser, EmptyData)
   EXPECT_EQ(0, messages.size());
 }
 
+TEST(Parser, SlicedData)
+{
+  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
+
+  TestTask::Messages::WrapperMessage message;
+  message.mutable_request_for_fast_response();
+
+  auto data = serializeDelimited(message);
+  size_t middle = data->size() / 2;
+
+  messages = parser.parse(std::string(data->begin(), data->begin() + middle));
+  EXPECT_EQ(messages.size(), 0);
+
+  messages = parser.parse(std::string(data->begin() + middle, data->end()));
+  EXPECT_EQ(messages.size(), 1);
+
+  auto item = messages.front();
+  ASSERT_TRUE(item->has_request_for_fast_response());
+}
+
 TEST(Parser, WrongData)
 {
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
