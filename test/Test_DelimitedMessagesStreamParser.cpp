@@ -6,7 +6,7 @@
 
 TEST(Parser, OneFastRequest)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -22,7 +22,7 @@ TEST(Parser, OneFastRequest)
 
 TEST(Parser, SomeFastRequests)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -44,7 +44,7 @@ TEST(Parser, SomeFastRequests)
 
 TEST(Parser, OneSlowRequest)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -64,7 +64,7 @@ TEST(Parser, OneSlowRequest)
 
 TEST(Parser, SomeSlowRequests)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -92,7 +92,7 @@ TEST(Parser, SomeSlowRequests)
 
 TEST(Parser, SomeRequests)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage fastRequest;
@@ -127,7 +127,7 @@ TEST(Parser, SomeRequests)
 
 TEST(Parser, OneFastResponse)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -147,7 +147,7 @@ TEST(Parser, OneFastResponse)
 
 TEST(Parser, SomeFastResponses)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -175,7 +175,7 @@ TEST(Parser, SomeFastResponses)
 
 TEST(Parser, OneSlowResponse)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -195,7 +195,7 @@ TEST(Parser, OneSlowResponse)
 
 TEST(Parser, SomeSlowResponses)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -223,7 +223,7 @@ TEST(Parser, SomeSlowResponses)
 
 TEST(Parser, SomeResponses)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage fastResponse;
@@ -268,7 +268,7 @@ TEST(Parser, SomeResponses)
 
 TEST(Parser, EmptyData)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   messages = parser.parse("");
@@ -277,7 +277,7 @@ TEST(Parser, EmptyData)
 
 TEST(Parser, SlicedData)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
@@ -304,7 +304,7 @@ TEST(Parser, WrongData)
 
 TEST(Parser, CorruptedData)
 {
-  list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
+  std::list<typename DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue> messages;
   DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> parser;
 
   TestTask::Messages::WrapperMessage message;
