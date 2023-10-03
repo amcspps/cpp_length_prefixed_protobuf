@@ -1,0 +1,24 @@
+default:
+  tags:
+    - docker
+    - ubuntu
+
+  image: "nexus.nic.etu:8181/nic/fedora_33:base"
+
+stages:
+  - build
+  - test
+
+build_script:
+  stage: build
+  script:
+    - dnf update -y  &&  dnf install -y gtest-devel protobuf-devel
+    - mkdir build
+    - cd build
+    - cmake ..
+    - make
+
+test_script:
+  stage: test
+  script:
+    - make test
