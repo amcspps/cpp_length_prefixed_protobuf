@@ -12,7 +12,7 @@ stages:
 build_script:
   stage: build
   script:
-    - dnf update -y  &&  dnf install -y gtest-devel protobuf-devel
+    - dnf update -y  &&  dnf install -y gcc-c++ cmake gtest-devel protobuf-devel
     - mkdir build
     - cd build
     - cmake ..
