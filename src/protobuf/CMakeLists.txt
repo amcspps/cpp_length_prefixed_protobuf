@@ -1,0 +1,11 @@
+set(PROTOBUF_TARGET_NAME Message)
+
+find_package(Protobuf REQUIRED)
+
+include_directories(${PROTOBUF_INCLUDE_DIRS})
+
+protobuf_generate_cpp(PROTO_SRCS PROTO_HDRS message.proto)
+
+add_library(${PROTOBUF_TARGET_NAME} ${PROTO_SRCS} ${PROTO_HDRS})
+
+target_link_libraries(${PROTOBUF_TARGET_NAME} PUBLIC protobuf::libprotobuf)
