@@ -1,10 +1,3 @@
-/*
- * DelimitedMessagesStreamParser.hpp
- *
- *  Created on: 2 Feb 2023
- *      Author: sia
- */
-
 #ifndef SRC_PROTOBUF_PARSER_DELIMITEDMESSAGESSTREAMPARSER_HPP_
 #define SRC_PROTOBUF_PARSER_DELIMITEDMESSAGESSTREAMPARSER_HPP_
 
