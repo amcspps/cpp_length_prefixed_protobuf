@@ -1,13 +1,15 @@
 #include <helpers.hpp>
 template <typename Message>
 PointerToConstData serializeDelimited(const Message& msg) {
-constsize_t messageSize = PROTOBUF_MESSAGE_BYTE_SIZE(msg);
-constsize_t headerSize = google::protobuf::io::CodedOutputStream::VarintSize32(messageSize);
-const PointerToData& result = std::make_shared<Data>(headerSize + messageSize);
-google::protobuf::uint8* buffer = reinterpret_cast<google::protobuf::uint8*>(&*result->begin());
-google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(messageSize, buffer);
-msg.SerializeWithCachedSizesToArray(buffer + headerSize);
-return result;
+    constsize_t messageSize = PROTOBUF_MESSAGE_BYTE_SIZE(msg);
+    constsize_t headerSize = google::protobuf::io::CodedOutputStream::VarintSize32(messageSize);
+
+    const PointerToData& result = std::make_shared<Data>(headerSize + messageSize);
+
+    google::protobuf::uint8* buffer = reinterpret_cast<google::protobuf::uint8*>(&*result->begin());
+    google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(messageSize, buffer);
+    msg.SerializeWithCachedSizesToArray(buffer + headerSize);
+    return result;
 }
 
 
@@ -28,5 +30,9 @@ std::shared_ptr<Message> parseDelimited(const void* data, size_t size, size_t* b
         }
         codedInput.PopLimit(limit);
     }
-    return nullptr;
+    else {
+        return nullptr;
+    }
+    
+
 }

@@ -20,8 +20,4 @@ template <typename Message>
 std::shared_ptr<Message> parseDelimited(const void* data, size_t size, size_t* bytesConsumed = 0);
 
 
-
-
-
-
 #endif /* SRC_PROTOBUF_PARSER_HELPERS_H_ */
