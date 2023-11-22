@@ -1,7 +1,7 @@
-#include "build/src/protobuf/message.pb.h"
+#include "src/protobuf/message.pb.h"
 #include "src/protobuf_parser/DelimitedMessagesStreamParser.hpp"
 #include "src/protobuf_parser/helpers.hpp"
-#include <iostream>
+#include <iostream> 
 
 typedef DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> Parser;
 
@@ -13,10 +13,10 @@ int main() {
   Parser parser; 
   std::vector<char> messages;
   for(const char byte : messages) {
-    const std::list<DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage>::PointerToConstValue>& parsedMessages = parser.parse(std::string(1, byte));
-    for(const auto& value : parsedMessages) {
+    auto parsedMessages = parser.parse(std::string(1, byte));
+    // for(const auto& value : parsedMessages) {
       
-    }
+    // }
   }
   return 0;
 }
