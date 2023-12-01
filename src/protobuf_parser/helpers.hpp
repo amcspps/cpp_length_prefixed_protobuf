@@ -33,6 +33,37 @@ PointerToConstData serializeDelimited(const Message& msg)  {
 
 template <typename Message>
 std::shared_ptr<Message> parseDelimited(const void* data, size_t size, size_t* bytesConsumed = 0) {
-    return nullptr;
-}
+    if (size < sizeof(uint32_t)) {
+            // Not enough data to parse the length prefix
+            return nullptr;
+        }
+
+    // Extract the length prefix from the data
+    uint32_t messageLength;
+    std::memcpy(&messageLength, data, sizeof(uint32_t));
+
+    // Check if the remaining data is sufficient for the complete message
+    size_t expectedSize = sizeof(uint32_t) + messageLength;
+    if (size < expectedSize) {
+        // Not enough data for the complete message
+        return nullptr;
+    }
+
+    // Extract the message data
+    const char* messageData = reinterpret_cast<const char*>(data) + sizeof(uint32_t);
+
+    // Deserialize the protobuf message
+    Message parsedMessage;
+    if (parsedMessage.ParseFromArray(messageData, messageLength)) {
+        // Set the number of consumed bytes
+        *bytesConsumed = expectedSize;
+
+        // Create a shared pointer to the parsed message
+        return std::make_shared<Message>(parsedMessage);
+    } else {
+        // Protobuf parsing failed
+        return nullptr;
+    }
+};
+
 #endif /* SRC_PROTOBUF_PARSER_HELPERS_H_ */
