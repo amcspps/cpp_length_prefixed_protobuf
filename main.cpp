@@ -8,7 +8,7 @@ typedef DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> Parser
 int main() {
   TestTask::Messages::WrapperMessage wm;
   TestTask::Messages::FastResponse* fastResponse = wm.mutable_fast_response();
-  fastResponse->set_current_date_time("a");
+  fastResponse->set_current_date_time("hell");
   auto serializedData = serializeDelimited(wm); 
   Parser parser; 
   std::vector<char> messages;

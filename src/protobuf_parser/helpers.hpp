@@ -39,8 +39,14 @@ std::shared_ptr<Message> parseDelimited(const void* data, size_t size, size_t* b
         }
 
     // Extract the length prefix from the data
-    uint32_t messageLength;
-    std::memcpy(&messageLength, data, sizeof(uint32_t));
+    google::protobuf::uint32 messageLength;
+    size_t bytesRead = google::protobuf::io::CodedInputStream::ReadVarint32FromArray(
+        reinterpret_cast<const google::protobuf::uint8*>(data), &messageLength);
+
+    if (bytesRead == 0) {
+        // Failed to read varint (possibly incomplete data)
+        return nullptr;
+    }
 
     // Check if the remaining data is sufficient for the complete message
     size_t expectedSize = sizeof(uint32_t) + messageLength;
