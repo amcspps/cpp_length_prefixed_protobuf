@@ -16,10 +16,14 @@ public:
       m_buffer.push_back(data.front());
       size_t bytesConsumed = 0;
       while(!m_buffer.empty()) {
-        auto parsedMessage = parseDelimited<MessageType>(m_buffer.data(), m_buffer.size(), &bytesConsumed);
+        std::shared_ptr<MessageType> parsedMessage = parseDelimited<MessageType>(m_buffer.data(), m_buffer.size(), &bytesConsumed);
         if (parsedMessage) {
+          // for (auto byte:m_buffer) {
+          //   std::cout << byte << "X";
+          // } 
+          std::cout << parsedMessage->fast_response().current_date_time();
           parsedMessages.push_back(parsedMessage);
-          m_buffer.clear();
+          m_buffer.erase(m_buffer.begin(), m_buffer.begin() + bytesConsumed);
         }
         else {
           break;
