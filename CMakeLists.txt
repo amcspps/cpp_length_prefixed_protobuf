@@ -6,15 +6,14 @@ project(protobuf_parser VERSION 1.0.0 DESCRIPTION "Разбор потока len
 
 set(SRCS
     main.cpp
-    src/protobuf_parser/DelimitedMessagesStreamParser.cpp
-    src/protobuf_parser/helpers.cpp
 )
 
 add_subdirectory(test)
 add_subdirectory(src/protobuf)
 
+
 enable_testing()
 
 add_executable(protobuf_parser ${SRCS})
-target_link_libraries(protobuf_parser Message)
 
+target_link_libraries(protobuf_parser Message ${PROTOBUF_DEPS})

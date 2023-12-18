@@ -14,167 +14,150 @@
 #include <google/protobuf/wire_format.h>
 // @@protoc_insertion_point(includes)
 #include <google/protobuf/port_def.inc>
-extern PROTOBUF_INTERNAL_EXPORT_message_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FastResponse_message_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_message_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RequestForFastResponse_message_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_message_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RequestForSlowResponse_message_2eproto;
-extern PROTOBUF_INTERNAL_EXPORT_message_2eproto ::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SlowResponse_message_2eproto;
+
+PROTOBUF_PRAGMA_INIT_SEG
+
+namespace _pb = ::PROTOBUF_NAMESPACE_ID;
+namespace _pbi = _pb::internal;
+
 namespace TestTask {
 namespace Messages {
-class WrapperMessageDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<WrapperMessage> _instance;
-} _WrapperMessage_default_instance_;
-class FastResponseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<FastResponse> _instance;
-} _FastResponse_default_instance_;
-class SlowResponseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<SlowResponse> _instance;
-} _SlowResponse_default_instance_;
-class RequestForFastResponseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RequestForFastResponse> _instance;
-} _RequestForFastResponse_default_instance_;
-class RequestForSlowResponseDefaultTypeInternal {
- public:
-  ::PROTOBUF_NAMESPACE_ID::internal::ExplicitlyConstructed<RequestForSlowResponse> _instance;
-} _RequestForSlowResponse_default_instance_;
+PROTOBUF_CONSTEXPR WrapperMessage::WrapperMessage(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.fast_response_)*/nullptr
+  , /*decltype(_impl_.slow_response_)*/nullptr
+  , /*decltype(_impl_.request_for_fast_response_)*/nullptr
+  , /*decltype(_impl_.request_for_slow_response_)*/nullptr} {}
+struct WrapperMessageDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR WrapperMessageDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~WrapperMessageDefaultTypeInternal() {}
+  union {
+    WrapperMessage _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 WrapperMessageDefaultTypeInternal _WrapperMessage_default_instance_;
+PROTOBUF_CONSTEXPR FastResponse::FastResponse(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.current_date_time_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}} {}
+struct FastResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR FastResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~FastResponseDefaultTypeInternal() {}
+  union {
+    FastResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 FastResponseDefaultTypeInternal _FastResponse_default_instance_;
+PROTOBUF_CONSTEXPR SlowResponse::SlowResponse(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.connected_client_count_)*/0u} {}
+struct SlowResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR SlowResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~SlowResponseDefaultTypeInternal() {}
+  union {
+    SlowResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SlowResponseDefaultTypeInternal _SlowResponse_default_instance_;
+PROTOBUF_CONSTEXPR RequestForFastResponse::RequestForFastResponse(
+    ::_pbi::ConstantInitialized) {}
+struct RequestForFastResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RequestForFastResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RequestForFastResponseDefaultTypeInternal() {}
+  union {
+    RequestForFastResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RequestForFastResponseDefaultTypeInternal _RequestForFastResponse_default_instance_;
+PROTOBUF_CONSTEXPR RequestForSlowResponse::RequestForSlowResponse(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_._has_bits_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_.time_in_seconds_to_sleep_)*/0u} {}
+struct RequestForSlowResponseDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR RequestForSlowResponseDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~RequestForSlowResponseDefaultTypeInternal() {}
+  union {
+    RequestForSlowResponse _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 RequestForSlowResponseDefaultTypeInternal _RequestForSlowResponse_default_instance_;
 }  // namespace Messages
 }  // namespace TestTask
-static void InitDefaultsscc_info_FastResponse_message_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
+static ::_pb::Metadata file_level_metadata_message_2eproto[5];
+static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_message_2eproto = nullptr;
+static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_message_2eproto = nullptr;
 
-  {
-    void* ptr = &::TestTask::Messages::_FastResponse_default_instance_;
-    new (ptr) ::TestTask::Messages::FastResponse();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::TestTask::Messages::FastResponse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_FastResponse_message_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_FastResponse_message_2eproto}, {}};
-
-static void InitDefaultsscc_info_RequestForFastResponse_message_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::TestTask::Messages::_RequestForFastResponse_default_instance_;
-    new (ptr) ::TestTask::Messages::RequestForFastResponse();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::TestTask::Messages::RequestForFastResponse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RequestForFastResponse_message_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RequestForFastResponse_message_2eproto}, {}};
-
-static void InitDefaultsscc_info_RequestForSlowResponse_message_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::TestTask::Messages::_RequestForSlowResponse_default_instance_;
-    new (ptr) ::TestTask::Messages::RequestForSlowResponse();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::TestTask::Messages::RequestForSlowResponse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_RequestForSlowResponse_message_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_RequestForSlowResponse_message_2eproto}, {}};
-
-static void InitDefaultsscc_info_SlowResponse_message_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::TestTask::Messages::_SlowResponse_default_instance_;
-    new (ptr) ::TestTask::Messages::SlowResponse();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::TestTask::Messages::SlowResponse::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<0> scc_info_SlowResponse_message_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 0, 0, InitDefaultsscc_info_SlowResponse_message_2eproto}, {}};
-
-static void InitDefaultsscc_info_WrapperMessage_message_2eproto() {
-  GOOGLE_PROTOBUF_VERIFY_VERSION;
-
-  {
-    void* ptr = &::TestTask::Messages::_WrapperMessage_default_instance_;
-    new (ptr) ::TestTask::Messages::WrapperMessage();
-    ::PROTOBUF_NAMESPACE_ID::internal::OnShutdownDestroyMessage(ptr);
-  }
-  ::TestTask::Messages::WrapperMessage::InitAsDefaultInstance();
-}
-
-::PROTOBUF_NAMESPACE_ID::internal::SCCInfo<4> scc_info_WrapperMessage_message_2eproto =
-    {{ATOMIC_VAR_INIT(::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase::kUninitialized), 4, 0, InitDefaultsscc_info_WrapperMessage_message_2eproto}, {
-      &scc_info_FastResponse_message_2eproto.base,
-      &scc_info_SlowResponse_message_2eproto.base,
-      &scc_info_RequestForFastResponse_message_2eproto.base,
-      &scc_info_RequestForSlowResponse_message_2eproto.base,}};
-
-static ::PROTOBUF_NAMESPACE_ID::Metadata file_level_metadata_message_2eproto[5];
-static constexpr ::PROTOBUF_NAMESPACE_ID::EnumDescriptor const** file_level_enum_descriptors_message_2eproto = nullptr;
-static constexpr ::PROTOBUF_NAMESPACE_ID::ServiceDescriptor const** file_level_service_descriptors_message_2eproto = nullptr;
-
-const ::PROTOBUF_NAMESPACE_ID::uint32 TableStruct_message_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, _has_bits_),
+const uint32_t TableStruct_message_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, fast_response_),
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, slow_response_),
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, request_for_fast_response_),
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, request_for_slow_response_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, _impl_.fast_response_),
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, _impl_.slow_response_),
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, _impl_.request_for_fast_response_),
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::WrapperMessage, _impl_.request_for_slow_response_),
   0,
   1,
   2,
   3,
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::FastResponse, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::FastResponse, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TestTask::Messages::FastResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::FastResponse, current_date_time_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::FastResponse, _impl_.current_date_time_),
   0,
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::SlowResponse, _has_bits_),
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::SlowResponse, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TestTask::Messages::SlowResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::SlowResponse, connected_client_count_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::SlowResponse, _impl_.connected_client_count_),
   0,
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::TestTask::Messages::RequestForFastResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::RequestForSlowResponse, _has_bits_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::RequestForSlowResponse, _impl_._has_bits_),
   PROTOBUF_FIELD_OFFSET(::TestTask::Messages::RequestForSlowResponse, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
-  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::RequestForSlowResponse, time_in_seconds_to_sleep_),
+  ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::TestTask::Messages::RequestForSlowResponse, _impl_.time_in_seconds_to_sleep_),
   0,
 };
-static const ::PROTOBUF_NAMESPACE_ID::internal::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 9, sizeof(::TestTask::Messages::WrapperMessage)},
-  { 13, 19, sizeof(::TestTask::Messages::FastResponse)},
-  { 20, 26, sizeof(::TestTask::Messages::SlowResponse)},
-  { 27, -1, sizeof(::TestTask::Messages::RequestForFastResponse)},
-  { 32, 38, sizeof(::TestTask::Messages::RequestForSlowResponse)},
+static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  { 0, 10, -1, sizeof(::TestTask::Messages::WrapperMessage)},
+  { 14, 21, -1, sizeof(::TestTask::Messages::FastResponse)},
+  { 22, 29, -1, sizeof(::TestTask::Messages::SlowResponse)},
+  { 30, -1, -1, sizeof(::TestTask::Messages::RequestForFastResponse)},
+  { 36, 43, -1, sizeof(::TestTask::Messages::RequestForSlowResponse)},
 };
 
-static ::PROTOBUF_NAMESPACE_ID::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TestTask::Messages::_WrapperMessage_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TestTask::Messages::_FastResponse_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TestTask::Messages::_SlowResponse_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TestTask::Messages::_RequestForFastResponse_default_instance_),
-  reinterpret_cast<const ::PROTOBUF_NAMESPACE_ID::Message*>(&::TestTask::Messages::_RequestForSlowResponse_default_instance_),
+static const ::_pb::Message* const file_default_instances[] = {
+  &::TestTask::Messages::_WrapperMessage_default_instance_._instance,
+  &::TestTask::Messages::_FastResponse_default_instance_._instance,
+  &::TestTask::Messages::_SlowResponse_default_instance_._instance,
+  &::TestTask::Messages::_RequestForFastResponse_default_instance_._instance,
+  &::TestTask::Messages::_RequestForSlowResponse_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_message_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
@@ -192,43 +175,29 @@ const char descriptor_table_protodef_message_2eproto[] PROTOBUF_SECTION_VARIABLE
   "\n\026RequestForSlowResponse\022 \n\030time_in_seco"
   "nds_to_sleep\030\001 \002(\r"
   ;
-static const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable*const descriptor_table_message_2eproto_deps[1] = {
+static ::_pbi::once_flag descriptor_table_message_2eproto_once;
+const ::_pbi::DescriptorTable descriptor_table_message_2eproto = {
+    false, false, 498, descriptor_table_protodef_message_2eproto,
+    "message.proto",
+    &descriptor_table_message_2eproto_once, nullptr, 0, 5,
+    schemas, file_default_instances, TableStruct_message_2eproto::offsets,
+    file_level_metadata_message_2eproto, file_level_enum_descriptors_message_2eproto,
+    file_level_service_descriptors_message_2eproto,
 };
-static ::PROTOBUF_NAMESPACE_ID::internal::SCCInfoBase*const descriptor_table_message_2eproto_sccs[5] = {
-  &scc_info_FastResponse_message_2eproto.base,
-  &scc_info_RequestForFastResponse_message_2eproto.base,
-  &scc_info_RequestForSlowResponse_message_2eproto.base,
-  &scc_info_SlowResponse_message_2eproto.base,
-  &scc_info_WrapperMessage_message_2eproto.base,
-};
-static ::PROTOBUF_NAMESPACE_ID::internal::once_flag descriptor_table_message_2eproto_once;
-const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_message_2eproto = {
-  false, false, descriptor_table_protodef_message_2eproto, "message.proto", 498,
-  &descriptor_table_message_2eproto_once, descriptor_table_message_2eproto_sccs, descriptor_table_message_2eproto_deps, 5, 0,
-  schemas, file_default_instances, TableStruct_message_2eproto::offsets,
-  file_level_metadata_message_2eproto, 5, file_level_enum_descriptors_message_2eproto, file_level_service_descriptors_message_2eproto,
-};
+PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_message_2eproto_getter() {
+  return &descriptor_table_message_2eproto;
+}
 
 // Force running AddDescriptors() at dynamic initialization time.
-static bool dynamic_init_dummy_message_2eproto = (static_cast<void>(::PROTOBUF_NAMESPACE_ID::internal::AddDescriptors(&descriptor_table_message_2eproto)), true);
+PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_message_2eproto(&descriptor_table_message_2eproto);
 namespace TestTask {
 namespace Messages {
 
 // ===================================================================
 
-void WrapperMessage::InitAsDefaultInstance() {
-  ::TestTask::Messages::_WrapperMessage_default_instance_._instance.get_mutable()->fast_response_ = const_cast< ::TestTask::Messages::FastResponse*>(
-      ::TestTask::Messages::FastResponse::internal_default_instance());
-  ::TestTask::Messages::_WrapperMessage_default_instance_._instance.get_mutable()->slow_response_ = const_cast< ::TestTask::Messages::SlowResponse*>(
-      ::TestTask::Messages::SlowResponse::internal_default_instance());
-  ::TestTask::Messages::_WrapperMessage_default_instance_._instance.get_mutable()->request_for_fast_response_ = const_cast< ::TestTask::Messages::RequestForFastResponse*>(
-      ::TestTask::Messages::RequestForFastResponse::internal_default_instance());
-  ::TestTask::Messages::_WrapperMessage_default_instance_._instance.get_mutable()->request_for_slow_response_ = const_cast< ::TestTask::Messages::RequestForSlowResponse*>(
-      ::TestTask::Messages::RequestForSlowResponse::internal_default_instance());
-}
 class WrapperMessage::_Internal {
  public:
-  using HasBits = decltype(std::declval<WrapperMessage>()._has_bits_);
+  using HasBits = decltype(std::declval<WrapperMessage>()._impl_._has_bits_);
   static const ::TestTask::Messages::FastResponse& fast_response(const WrapperMessage* msg);
   static void set_has_fast_response(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
@@ -249,219 +218,217 @@ class WrapperMessage::_Internal {
 
 const ::TestTask::Messages::FastResponse&
 WrapperMessage::_Internal::fast_response(const WrapperMessage* msg) {
-  return *msg->fast_response_;
+  return *msg->_impl_.fast_response_;
 }
 const ::TestTask::Messages::SlowResponse&
 WrapperMessage::_Internal::slow_response(const WrapperMessage* msg) {
-  return *msg->slow_response_;
+  return *msg->_impl_.slow_response_;
 }
 const ::TestTask::Messages::RequestForFastResponse&
 WrapperMessage::_Internal::request_for_fast_response(const WrapperMessage* msg) {
-  return *msg->request_for_fast_response_;
+  return *msg->_impl_.request_for_fast_response_;
 }
 const ::TestTask::Messages::RequestForSlowResponse&
 WrapperMessage::_Internal::request_for_slow_response(const WrapperMessage* msg) {
-  return *msg->request_for_slow_response_;
+  return *msg->_impl_.request_for_slow_response_;
 }
-WrapperMessage::WrapperMessage(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+WrapperMessage::WrapperMessage(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TestTask.Messages.WrapperMessage)
 }
 WrapperMessage::WrapperMessage(const WrapperMessage& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  WrapperMessage* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.fast_response_){nullptr}
+    , decltype(_impl_.slow_response_){nullptr}
+    , decltype(_impl_.request_for_fast_response_){nullptr}
+    , decltype(_impl_.request_for_slow_response_){nullptr}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_fast_response()) {
-    fast_response_ = new ::TestTask::Messages::FastResponse(*from.fast_response_);
-  } else {
-    fast_response_ = nullptr;
+    _this->_impl_.fast_response_ = new ::TestTask::Messages::FastResponse(*from._impl_.fast_response_);
   }
   if (from._internal_has_slow_response()) {
-    slow_response_ = new ::TestTask::Messages::SlowResponse(*from.slow_response_);
-  } else {
-    slow_response_ = nullptr;
+    _this->_impl_.slow_response_ = new ::TestTask::Messages::SlowResponse(*from._impl_.slow_response_);
   }
   if (from._internal_has_request_for_fast_response()) {
-    request_for_fast_response_ = new ::TestTask::Messages::RequestForFastResponse(*from.request_for_fast_response_);
-  } else {
-    request_for_fast_response_ = nullptr;
+    _this->_impl_.request_for_fast_response_ = new ::TestTask::Messages::RequestForFastResponse(*from._impl_.request_for_fast_response_);
   }
   if (from._internal_has_request_for_slow_response()) {
-    request_for_slow_response_ = new ::TestTask::Messages::RequestForSlowResponse(*from.request_for_slow_response_);
-  } else {
-    request_for_slow_response_ = nullptr;
+    _this->_impl_.request_for_slow_response_ = new ::TestTask::Messages::RequestForSlowResponse(*from._impl_.request_for_slow_response_);
   }
   // @@protoc_insertion_point(copy_constructor:TestTask.Messages.WrapperMessage)
 }
 
-void WrapperMessage::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_WrapperMessage_message_2eproto.base);
-  ::memset(&fast_response_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&request_for_slow_response_) -
-      reinterpret_cast<char*>(&fast_response_)) + sizeof(request_for_slow_response_));
+inline void WrapperMessage::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.fast_response_){nullptr}
+    , decltype(_impl_.slow_response_){nullptr}
+    , decltype(_impl_.request_for_fast_response_){nullptr}
+    , decltype(_impl_.request_for_slow_response_){nullptr}
+  };
 }
 
 WrapperMessage::~WrapperMessage() {
   // @@protoc_insertion_point(destructor:TestTask.Messages.WrapperMessage)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void WrapperMessage::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  if (this != internal_default_instance()) delete fast_response_;
-  if (this != internal_default_instance()) delete slow_response_;
-  if (this != internal_default_instance()) delete request_for_fast_response_;
-  if (this != internal_default_instance()) delete request_for_slow_response_;
+inline void WrapperMessage::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (this != internal_default_instance()) delete _impl_.fast_response_;
+  if (this != internal_default_instance()) delete _impl_.slow_response_;
+  if (this != internal_default_instance()) delete _impl_.request_for_fast_response_;
+  if (this != internal_default_instance()) delete _impl_.request_for_slow_response_;
 }
 
-void WrapperMessage::ArenaDtor(void* object) {
-  WrapperMessage* _this = reinterpret_cast< WrapperMessage* >(object);
-  (void)_this;
-}
-void WrapperMessage::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void WrapperMessage::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const WrapperMessage& WrapperMessage::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_WrapperMessage_message_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void WrapperMessage::Clear() {
 // @@protoc_insertion_point(message_clear_start:TestTask.Messages.WrapperMessage)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(fast_response_ != nullptr);
-      fast_response_->Clear();
+      GOOGLE_DCHECK(_impl_.fast_response_ != nullptr);
+      _impl_.fast_response_->Clear();
     }
     if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(slow_response_ != nullptr);
-      slow_response_->Clear();
+      GOOGLE_DCHECK(_impl_.slow_response_ != nullptr);
+      _impl_.slow_response_->Clear();
     }
     if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(request_for_fast_response_ != nullptr);
-      request_for_fast_response_->Clear();
+      GOOGLE_DCHECK(_impl_.request_for_fast_response_ != nullptr);
+      _impl_.request_for_fast_response_->Clear();
     }
     if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(request_for_slow_response_ != nullptr);
-      request_for_slow_response_->Clear();
+      GOOGLE_DCHECK(_impl_.request_for_slow_response_ != nullptr);
+      _impl_.request_for_slow_response_->Clear();
     }
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* WrapperMessage::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* WrapperMessage::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // optional .TestTask.Messages.FastResponse fast_response = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr = ctx->ParseMessage(_internal_mutable_fast_response(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TestTask.Messages.SlowResponse slow_response = 2;
       case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 18)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_slow_response(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TestTask.Messages.RequestForFastResponse request_for_fast_response = 3;
       case 3:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 26)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_request_for_fast_response(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
       // optional .TestTask.Messages.RequestForSlowResponse request_for_slow_response = 4;
       case 4:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 34)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 34)) {
           ptr = ctx->ParseMessage(_internal_mutable_request_for_slow_response(), ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* WrapperMessage::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* WrapperMessage::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TestTask.Messages.WrapperMessage)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // optional .TestTask.Messages.FastResponse fast_response = 1;
   if (cached_has_bits & 0x00000001u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        1, _Internal::fast_response(this), target, stream);
+      InternalWriteMessage(1, _Internal::fast_response(this),
+        _Internal::fast_response(this).GetCachedSize(), target, stream);
   }
 
   // optional .TestTask.Messages.SlowResponse slow_response = 2;
   if (cached_has_bits & 0x00000002u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        2, _Internal::slow_response(this), target, stream);
+      InternalWriteMessage(2, _Internal::slow_response(this),
+        _Internal::slow_response(this).GetCachedSize(), target, stream);
   }
 
   // optional .TestTask.Messages.RequestForFastResponse request_for_fast_response = 3;
   if (cached_has_bits & 0x00000004u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        3, _Internal::request_for_fast_response(this), target, stream);
+      InternalWriteMessage(3, _Internal::request_for_fast_response(this),
+        _Internal::request_for_fast_response(this).GetCachedSize(), target, stream);
   }
 
   // optional .TestTask.Messages.RequestForSlowResponse request_for_slow_response = 4;
   if (cached_has_bits & 0x00000008u) {
-    target = stream->EnsureSpace(target);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(
-        4, _Internal::request_for_slow_response(this), target, stream);
+      InternalWriteMessage(4, _Internal::request_for_slow_response(this),
+        _Internal::request_for_slow_response(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TestTask.Messages.WrapperMessage)
@@ -472,94 +439,79 @@ size_t WrapperMessage::ByteSizeLong() const {
 // @@protoc_insertion_point(message_byte_size_start:TestTask.Messages.WrapperMessage)
   size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     // optional .TestTask.Messages.FastResponse fast_response = 1;
     if (cached_has_bits & 0x00000001u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *fast_response_);
+          *_impl_.fast_response_);
     }
 
     // optional .TestTask.Messages.SlowResponse slow_response = 2;
     if (cached_has_bits & 0x00000002u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *slow_response_);
+          *_impl_.slow_response_);
     }
 
     // optional .TestTask.Messages.RequestForFastResponse request_for_fast_response = 3;
     if (cached_has_bits & 0x00000004u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *request_for_fast_response_);
+          *_impl_.request_for_fast_response_);
     }
 
     // optional .TestTask.Messages.RequestForSlowResponse request_for_slow_response = 4;
     if (cached_has_bits & 0x00000008u) {
       total_size += 1 +
         ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-          *request_for_slow_response_);
+          *_impl_.request_for_slow_response_);
     }
 
   }
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void WrapperMessage::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TestTask.Messages.WrapperMessage)
-  GOOGLE_DCHECK_NE(&from, this);
-  const WrapperMessage* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<WrapperMessage>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TestTask.Messages.WrapperMessage)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TestTask.Messages.WrapperMessage)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData WrapperMessage::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    WrapperMessage::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*WrapperMessage::GetClassData() const { return &_class_data_; }
 
-void WrapperMessage::MergeFrom(const WrapperMessage& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.WrapperMessage)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void WrapperMessage::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<WrapperMessage*>(&to_msg);
+  auto& from = static_cast<const WrapperMessage&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.WrapperMessage)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = from._has_bits_[0];
+  cached_has_bits = from._impl_._has_bits_[0];
   if (cached_has_bits & 0x0000000fu) {
     if (cached_has_bits & 0x00000001u) {
-      _internal_mutable_fast_response()->::TestTask::Messages::FastResponse::MergeFrom(from._internal_fast_response());
+      _this->_internal_mutable_fast_response()->::TestTask::Messages::FastResponse::MergeFrom(
+          from._internal_fast_response());
     }
     if (cached_has_bits & 0x00000002u) {
-      _internal_mutable_slow_response()->::TestTask::Messages::SlowResponse::MergeFrom(from._internal_slow_response());
+      _this->_internal_mutable_slow_response()->::TestTask::Messages::SlowResponse::MergeFrom(
+          from._internal_slow_response());
     }
     if (cached_has_bits & 0x00000004u) {
-      _internal_mutable_request_for_fast_response()->::TestTask::Messages::RequestForFastResponse::MergeFrom(from._internal_request_for_fast_response());
+      _this->_internal_mutable_request_for_fast_response()->::TestTask::Messages::RequestForFastResponse::MergeFrom(
+          from._internal_request_for_fast_response());
     }
     if (cached_has_bits & 0x00000008u) {
-      _internal_mutable_request_for_slow_response()->::TestTask::Messages::RequestForSlowResponse::MergeFrom(from._internal_request_for_slow_response());
+      _this->_internal_mutable_request_for_slow_response()->::TestTask::Messages::RequestForSlowResponse::MergeFrom(
+          from._internal_request_for_slow_response());
     }
   }
-}
-
-void WrapperMessage::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TestTask.Messages.WrapperMessage)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void WrapperMessage::CopyFrom(const WrapperMessage& from) {
@@ -571,41 +523,40 @@ void WrapperMessage::CopyFrom(const WrapperMessage& from) {
 
 bool WrapperMessage::IsInitialized() const {
   if (_internal_has_fast_response()) {
-    if (!fast_response_->IsInitialized()) return false;
+    if (!_impl_.fast_response_->IsInitialized()) return false;
   }
   if (_internal_has_slow_response()) {
-    if (!slow_response_->IsInitialized()) return false;
+    if (!_impl_.slow_response_->IsInitialized()) return false;
   }
   if (_internal_has_request_for_slow_response()) {
-    if (!request_for_slow_response_->IsInitialized()) return false;
+    if (!_impl_.request_for_slow_response_->IsInitialized()) return false;
   }
   return true;
 }
 
 void WrapperMessage::InternalSwap(WrapperMessage* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(WrapperMessage, request_for_slow_response_)
-      + sizeof(WrapperMessage::request_for_slow_response_)
-      - PROTOBUF_FIELD_OFFSET(WrapperMessage, fast_response_)>(
-          reinterpret_cast<char*>(&fast_response_),
-          reinterpret_cast<char*>(&other->fast_response_));
+      PROTOBUF_FIELD_OFFSET(WrapperMessage, _impl_.request_for_slow_response_)
+      + sizeof(WrapperMessage::_impl_.request_for_slow_response_)
+      - PROTOBUF_FIELD_OFFSET(WrapperMessage, _impl_.fast_response_)>(
+          reinterpret_cast<char*>(&_impl_.fast_response_),
+          reinterpret_cast<char*>(&other->_impl_.fast_response_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata WrapperMessage::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
+      file_level_metadata_message_2eproto[0]);
 }
-
 
 // ===================================================================
 
-void FastResponse::InitAsDefaultInstance() {
-}
 class FastResponse::_Internal {
  public:
-  using HasBits = decltype(std::declval<FastResponse>()._has_bits_);
+  using HasBits = decltype(std::declval<FastResponse>()._impl_._has_bits_);
   static void set_has_current_date_time(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -614,119 +565,129 @@ class FastResponse::_Internal {
   }
 };
 
-FastResponse::FastResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+FastResponse::FastResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TestTask.Messages.FastResponse)
 }
 FastResponse::FastResponse(const FastResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  FastResponse* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.current_date_time_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  current_date_time_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+  _impl_.current_date_time_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.current_date_time_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
   if (from._internal_has_current_date_time()) {
-    current_date_time_.Set(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), from._internal_current_date_time(),
-      GetArena());
+    _this->_impl_.current_date_time_.Set(from._internal_current_date_time(), 
+      _this->GetArenaForAllocation());
   }
   // @@protoc_insertion_point(copy_constructor:TestTask.Messages.FastResponse)
 }
 
-void FastResponse::SharedCtor() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&scc_info_FastResponse_message_2eproto.base);
-  current_date_time_.UnsafeSetDefault(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void FastResponse::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.current_date_time_){}
+  };
+  _impl_.current_date_time_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.current_date_time_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 FastResponse::~FastResponse() {
   // @@protoc_insertion_point(destructor:TestTask.Messages.FastResponse)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void FastResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-  current_date_time_.DestroyNoArena(&::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited());
+inline void FastResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.current_date_time_.Destroy();
 }
 
-void FastResponse::ArenaDtor(void* object) {
-  FastResponse* _this = reinterpret_cast< FastResponse* >(object);
-  (void)_this;
-}
-void FastResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void FastResponse::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const FastResponse& FastResponse::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_FastResponse_message_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void FastResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:TestTask.Messages.FastResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   if (cached_has_bits & 0x00000001u) {
-    current_date_time_.ClearNonDefaultToEmpty();
+    _impl_.current_date_time_.ClearNonDefaultToEmpty();
   }
-  _has_bits_.Clear();
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* FastResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* FastResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required string current_date_time = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 10)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           auto str = _internal_mutable_current_date_time();
-          ptr = ::PROTOBUF_NAMESPACE_ID::internal::InlineGreedyStringParser(str, ptr, ctx);
-          #ifndef NDEBUG
-          ::PROTOBUF_NAMESPACE_ID::internal::VerifyUTF8(str, "TestTask.Messages.FastResponse.current_date_time");
-          #endif  // !NDEBUG
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-        } else goto handle_unusual;
+          #ifndef NDEBUG
+          ::_pbi::VerifyUTF8(str, "TestTask.Messages.FastResponse.current_date_time");
+          #endif  // !NDEBUG
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* FastResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* FastResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TestTask.Messages.FastResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required string current_date_time = 1;
   if (cached_has_bits & 0x00000001u) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::VerifyUTF8StringNamedField(
@@ -738,7 +699,7 @@ failure:
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TestTask.Messages.FastResponse)
@@ -755,51 +716,32 @@ size_t FastResponse::ByteSizeLong() const {
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
         this->_internal_current_date_time());
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void FastResponse::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TestTask.Messages.FastResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  const FastResponse* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<FastResponse>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TestTask.Messages.FastResponse)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TestTask.Messages.FastResponse)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData FastResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    FastResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*FastResponse::GetClassData() const { return &_class_data_; }
 
-void FastResponse::MergeFrom(const FastResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.FastResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void FastResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<FastResponse*>(&to_msg);
+  auto& from = static_cast<const FastResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.FastResponse)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_current_date_time()) {
-    _internal_set_current_date_time(from._internal_current_date_time());
+    _this->_internal_set_current_date_time(from._internal_current_date_time());
   }
-}
-
-void FastResponse::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TestTask.Messages.FastResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void FastResponse::CopyFrom(const FastResponse& from) {
@@ -810,29 +752,33 @@ void FastResponse::CopyFrom(const FastResponse& from) {
 }
 
 bool FastResponse::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void FastResponse::InternalSwap(FastResponse* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  current_date_time_.Swap(&other->current_date_time_, &::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited(), GetArena());
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.current_date_time_, lhs_arena,
+      &other->_impl_.current_date_time_, rhs_arena
+  );
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata FastResponse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
+      file_level_metadata_message_2eproto[1]);
 }
-
 
 // ===================================================================
 
-void SlowResponse::InitAsDefaultInstance() {
-}
 class SlowResponse::_Internal {
  public:
-  using HasBits = decltype(std::declval<SlowResponse>()._has_bits_);
+  using HasBits = decltype(std::declval<SlowResponse>()._impl_._has_bits_);
   static void set_has_connected_client_count(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -841,115 +787,119 @@ class SlowResponse::_Internal {
   }
 };
 
-SlowResponse::SlowResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+SlowResponse::SlowResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TestTask.Messages.SlowResponse)
 }
 SlowResponse::SlowResponse(const SlowResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  SlowResponse* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.connected_client_count_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  connected_client_count_ = from.connected_client_count_;
+  _this->_impl_.connected_client_count_ = from._impl_.connected_client_count_;
   // @@protoc_insertion_point(copy_constructor:TestTask.Messages.SlowResponse)
 }
 
-void SlowResponse::SharedCtor() {
-  connected_client_count_ = 0u;
+inline void SlowResponse::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.connected_client_count_){0u}
+  };
 }
 
 SlowResponse::~SlowResponse() {
   // @@protoc_insertion_point(destructor:TestTask.Messages.SlowResponse)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void SlowResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void SlowResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void SlowResponse::ArenaDtor(void* object) {
-  SlowResponse* _this = reinterpret_cast< SlowResponse* >(object);
-  (void)_this;
-}
-void SlowResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void SlowResponse::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const SlowResponse& SlowResponse::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_SlowResponse_message_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void SlowResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:TestTask.Messages.SlowResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  connected_client_count_ = 0u;
-  _has_bits_.Clear();
+  _impl_.connected_client_count_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SlowResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* SlowResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint32 connected_client_count = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_connected_client_count(&has_bits);
-          connected_client_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.connected_client_count_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* SlowResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* SlowResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TestTask.Messages.SlowResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint32 connected_client_count = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_connected_client_count(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_connected_client_count(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TestTask.Messages.SlowResponse)
@@ -962,55 +912,34 @@ size_t SlowResponse::ByteSizeLong() const {
 
   // required uint32 connected_client_count = 1;
   if (_internal_has_connected_client_count()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_connected_client_count());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_connected_client_count());
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void SlowResponse::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TestTask.Messages.SlowResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  const SlowResponse* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<SlowResponse>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TestTask.Messages.SlowResponse)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TestTask.Messages.SlowResponse)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SlowResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    SlowResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SlowResponse::GetClassData() const { return &_class_data_; }
 
-void SlowResponse::MergeFrom(const SlowResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.SlowResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void SlowResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<SlowResponse*>(&to_msg);
+  auto& from = static_cast<const SlowResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.SlowResponse)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_connected_client_count()) {
-    _internal_set_connected_client_count(from._internal_connected_client_count());
+    _this->_internal_set_connected_client_count(from._internal_connected_client_count());
   }
-}
-
-void SlowResponse::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TestTask.Messages.SlowResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void SlowResponse::CopyFrom(const SlowResponse& from) {
@@ -1021,194 +950,68 @@ void SlowResponse::CopyFrom(const SlowResponse& from) {
 }
 
 bool SlowResponse::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void SlowResponse::InternalSwap(SlowResponse* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(connected_client_count_, other->connected_client_count_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.connected_client_count_, other->_impl_.connected_client_count_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata SlowResponse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
+      file_level_metadata_message_2eproto[2]);
 }
-
 
 // ===================================================================
 
-void RequestForFastResponse::InitAsDefaultInstance() {
-}
 class RequestForFastResponse::_Internal {
  public:
 };
 
-RequestForFastResponse::RequestForFastResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+RequestForFastResponse::RequestForFastResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase(arena, is_message_owned) {
   // @@protoc_insertion_point(arena_constructor:TestTask.Messages.RequestForFastResponse)
 }
 RequestForFastResponse::RequestForFastResponse(const RequestForFastResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  : ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase() {
+  RequestForFastResponse* const _this = this; (void)_this;
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   // @@protoc_insertion_point(copy_constructor:TestTask.Messages.RequestForFastResponse)
 }
 
-void RequestForFastResponse::SharedCtor() {
-}
-
-RequestForFastResponse::~RequestForFastResponse() {
-  // @@protoc_insertion_point(destructor:TestTask.Messages.RequestForFastResponse)
-  SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
-
-void RequestForFastResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
-}
-
-void RequestForFastResponse::ArenaDtor(void* object) {
-  RequestForFastResponse* _this = reinterpret_cast< RequestForFastResponse* >(object);
-  (void)_this;
-}
-void RequestForFastResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
-void RequestForFastResponse::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
-}
-const RequestForFastResponse& RequestForFastResponse::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RequestForFastResponse_message_2eproto.base);
-  return *internal_default_instance();
-}
 
 
-void RequestForFastResponse::Clear() {
-// @@protoc_insertion_point(message_clear_start:TestTask.Messages.RequestForFastResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
 
-  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
-}
 
-const char* RequestForFastResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
-#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
-  while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-  }  // while
-success:
-  return ptr;
-failure:
-  ptr = nullptr;
-  goto success;
-#undef CHK_
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RequestForFastResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::CopyImpl,
+    ::PROTOBUF_NAMESPACE_ID::internal::ZeroFieldsBase::MergeImpl,
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RequestForFastResponse::GetClassData() const { return &_class_data_; }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RequestForFastResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:TestTask.Messages.RequestForFastResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
-  }
-  // @@protoc_insertion_point(serialize_to_array_end:TestTask.Messages.RequestForFastResponse)
-  return target;
-}
 
-size_t RequestForFastResponse::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:TestTask.Messages.RequestForFastResponse)
-  size_t total_size = 0;
 
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
-}
 
-void RequestForFastResponse::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TestTask.Messages.RequestForFastResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RequestForFastResponse* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RequestForFastResponse>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TestTask.Messages.RequestForFastResponse)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TestTask.Messages.RequestForFastResponse)
-    MergeFrom(*source);
-  }
-}
-
-void RequestForFastResponse::MergeFrom(const RequestForFastResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.RequestForFastResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-}
-
-void RequestForFastResponse::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TestTask.Messages.RequestForFastResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-void RequestForFastResponse::CopyFrom(const RequestForFastResponse& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:TestTask.Messages.RequestForFastResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
-}
-
-bool RequestForFastResponse::IsInitialized() const {
-  return true;
-}
-
-void RequestForFastResponse::InternalSwap(RequestForFastResponse* other) {
-  using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-}
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RequestForFastResponse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
+      file_level_metadata_message_2eproto[3]);
 }
-
 
 // ===================================================================
 
-void RequestForSlowResponse::InitAsDefaultInstance() {
-}
 class RequestForSlowResponse::_Internal {
  public:
-  using HasBits = decltype(std::declval<RequestForSlowResponse>()._has_bits_);
+  using HasBits = decltype(std::declval<RequestForSlowResponse>()._impl_._has_bits_);
   static void set_has_time_in_seconds_to_sleep(HasBits* has_bits) {
     (*has_bits)[0] |= 1u;
   }
@@ -1217,115 +1020,119 @@ class RequestForSlowResponse::_Internal {
   }
 };
 
-RequestForSlowResponse::RequestForSlowResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena)
-  : ::PROTOBUF_NAMESPACE_ID::Message(arena) {
-  SharedCtor();
-  RegisterArenaDtor(arena);
+RequestForSlowResponse::RequestForSlowResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
   // @@protoc_insertion_point(arena_constructor:TestTask.Messages.RequestForSlowResponse)
 }
 RequestForSlowResponse::RequestForSlowResponse(const RequestForSlowResponse& from)
-  : ::PROTOBUF_NAMESPACE_ID::Message(),
-      _has_bits_(from._has_bits_) {
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  RequestForSlowResponse* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){from._impl_._has_bits_}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.time_in_seconds_to_sleep_){}};
+
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  time_in_seconds_to_sleep_ = from.time_in_seconds_to_sleep_;
+  _this->_impl_.time_in_seconds_to_sleep_ = from._impl_.time_in_seconds_to_sleep_;
   // @@protoc_insertion_point(copy_constructor:TestTask.Messages.RequestForSlowResponse)
 }
 
-void RequestForSlowResponse::SharedCtor() {
-  time_in_seconds_to_sleep_ = 0u;
+inline void RequestForSlowResponse::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_._has_bits_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , decltype(_impl_.time_in_seconds_to_sleep_){0u}
+  };
 }
 
 RequestForSlowResponse::~RequestForSlowResponse() {
   // @@protoc_insertion_point(destructor:TestTask.Messages.RequestForSlowResponse)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
   SharedDtor();
-  _internal_metadata_.Delete<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-void RequestForSlowResponse::SharedDtor() {
-  GOOGLE_DCHECK(GetArena() == nullptr);
+inline void RequestForSlowResponse::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void RequestForSlowResponse::ArenaDtor(void* object) {
-  RequestForSlowResponse* _this = reinterpret_cast< RequestForSlowResponse* >(object);
-  (void)_this;
-}
-void RequestForSlowResponse::RegisterArenaDtor(::PROTOBUF_NAMESPACE_ID::Arena*) {
-}
 void RequestForSlowResponse::SetCachedSize(int size) const {
-  _cached_size_.Set(size);
+  _impl_._cached_size_.Set(size);
 }
-const RequestForSlowResponse& RequestForSlowResponse::default_instance() {
-  ::PROTOBUF_NAMESPACE_ID::internal::InitSCC(&::scc_info_RequestForSlowResponse_message_2eproto.base);
-  return *internal_default_instance();
-}
-
 
 void RequestForSlowResponse::Clear() {
 // @@protoc_insertion_point(message_clear_start:TestTask.Messages.RequestForSlowResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  time_in_seconds_to_sleep_ = 0u;
-  _has_bits_.Clear();
+  _impl_.time_in_seconds_to_sleep_ = 0u;
+  _impl_._has_bits_.Clear();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* RequestForSlowResponse::_InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) {
+const char* RequestForSlowResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   _Internal::HasBits has_bits{};
-  ::PROTOBUF_NAMESPACE_ID::Arena* arena = GetArena(); (void)arena;
   while (!ctx->Done(&ptr)) {
-    ::PROTOBUF_NAMESPACE_ID::uint32 tag;
-    ptr = ::PROTOBUF_NAMESPACE_ID::internal::ReadTag(ptr, &tag);
-    CHK_(ptr);
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
       // required uint32 time_in_seconds_to_sleep = 1;
       case 1:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<::PROTOBUF_NAMESPACE_ID::uint8>(tag) == 8)) {
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _Internal::set_has_time_in_seconds_to_sleep(&has_bits);
-          time_in_seconds_to_sleep_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
+          _impl_.time_in_seconds_to_sleep_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
           CHK_(ptr);
-        } else goto handle_unusual;
+        } else
+          goto handle_unusual;
         continue;
-      default: {
-      handle_unusual:
-        if ((tag & 7) == 4 || tag == 0) {
-          ctx->SetLastTag(tag);
-          goto success;
-        }
-        ptr = UnknownFieldParse(tag,
-            _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
-            ptr, ctx);
-        CHK_(ptr != nullptr);
-        continue;
-      }
+      default:
+        goto handle_unusual;
     }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
   }  // while
-success:
-  _has_bits_.Or(has_bits);
+message_done:
+  _impl_._has_bits_.Or(has_bits);
   return ptr;
 failure:
   ptr = nullptr;
-  goto success;
+  goto message_done;
 #undef CHK_
 }
 
-::PROTOBUF_NAMESPACE_ID::uint8* RequestForSlowResponse::_InternalSerialize(
-    ::PROTOBUF_NAMESPACE_ID::uint8* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+uint8_t* RequestForSlowResponse::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
   // @@protoc_insertion_point(serialize_to_array_start:TestTask.Messages.RequestForSlowResponse)
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  cached_has_bits = _has_bits_[0];
+  cached_has_bits = _impl_._has_bits_[0];
   // required uint32 time_in_seconds_to_sleep = 1;
   if (cached_has_bits & 0x00000001u) {
     target = stream->EnsureSpace(target);
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::WriteUInt32ToArray(1, this->_internal_time_in_seconds_to_sleep(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_time_in_seconds_to_sleep(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormat::InternalSerializeUnknownFieldsToArray(
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
   // @@protoc_insertion_point(serialize_to_array_end:TestTask.Messages.RequestForSlowResponse)
@@ -1338,55 +1145,34 @@ size_t RequestForSlowResponse::ByteSizeLong() const {
 
   // required uint32 time_in_seconds_to_sleep = 1;
   if (_internal_has_time_in_seconds_to_sleep()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::UInt32Size(
-        this->_internal_time_in_seconds_to_sleep());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_time_in_seconds_to_sleep());
   }
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+  uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
-    return ::PROTOBUF_NAMESPACE_ID::internal::ComputeUnknownFieldsSize(
-        _internal_metadata_, total_size, &_cached_size_);
-  }
-  int cached_size = ::PROTOBUF_NAMESPACE_ID::internal::ToCachedSize(total_size);
-  SetCachedSize(cached_size);
-  return total_size;
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-void RequestForSlowResponse::MergeFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:TestTask.Messages.RequestForSlowResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  const RequestForSlowResponse* source =
-      ::PROTOBUF_NAMESPACE_ID::DynamicCastToGenerated<RequestForSlowResponse>(
-          &from);
-  if (source == nullptr) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:TestTask.Messages.RequestForSlowResponse)
-    ::PROTOBUF_NAMESPACE_ID::internal::ReflectionOps::Merge(from, this);
-  } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:TestTask.Messages.RequestForSlowResponse)
-    MergeFrom(*source);
-  }
-}
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData RequestForSlowResponse::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    RequestForSlowResponse::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*RequestForSlowResponse::GetClassData() const { return &_class_data_; }
 
-void RequestForSlowResponse::MergeFrom(const RequestForSlowResponse& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.RequestForSlowResponse)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::uint32 cached_has_bits = 0;
+
+void RequestForSlowResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<RequestForSlowResponse*>(&to_msg);
+  auto& from = static_cast<const RequestForSlowResponse&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:TestTask.Messages.RequestForSlowResponse)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_time_in_seconds_to_sleep()) {
-    _internal_set_time_in_seconds_to_sleep(from._internal_time_in_seconds_to_sleep());
+    _this->_internal_set_time_in_seconds_to_sleep(from._internal_time_in_seconds_to_sleep());
   }
-}
-
-void RequestForSlowResponse::CopyFrom(const ::PROTOBUF_NAMESPACE_ID::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:TestTask.Messages.RequestForSlowResponse)
-  if (&from == this) return;
-  Clear();
-  MergeFrom(from);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
 void RequestForSlowResponse::CopyFrom(const RequestForSlowResponse& from) {
@@ -1397,39 +1183,45 @@ void RequestForSlowResponse::CopyFrom(const RequestForSlowResponse& from) {
 }
 
 bool RequestForSlowResponse::IsInitialized() const {
-  if (_Internal::MissingRequiredFields(_has_bits_)) return false;
+  if (_Internal::MissingRequiredFields(_impl_._has_bits_)) return false;
   return true;
 }
 
 void RequestForSlowResponse::InternalSwap(RequestForSlowResponse* other) {
   using std::swap;
-  _internal_metadata_.Swap<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(&other->_internal_metadata_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  swap(time_in_seconds_to_sleep_, other->time_in_seconds_to_sleep_);
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_._has_bits_[0], other->_impl_._has_bits_[0]);
+  swap(_impl_.time_in_seconds_to_sleep_, other->_impl_.time_in_seconds_to_sleep_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata RequestForSlowResponse::GetMetadata() const {
-  return GetMetadataStatic();
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_message_2eproto_getter, &descriptor_table_message_2eproto_once,
+      file_level_metadata_message_2eproto[4]);
 }
-
 
 // @@protoc_insertion_point(namespace_scope)
 }  // namespace Messages
 }  // namespace TestTask
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::TestTask::Messages::WrapperMessage* Arena::CreateMaybeMessage< ::TestTask::Messages::WrapperMessage >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TestTask::Messages::WrapperMessage*
+Arena::CreateMaybeMessage< ::TestTask::Messages::WrapperMessage >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TestTask::Messages::WrapperMessage >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TestTask::Messages::FastResponse* Arena::CreateMaybeMessage< ::TestTask::Messages::FastResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TestTask::Messages::FastResponse*
+Arena::CreateMaybeMessage< ::TestTask::Messages::FastResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TestTask::Messages::FastResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TestTask::Messages::SlowResponse* Arena::CreateMaybeMessage< ::TestTask::Messages::SlowResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TestTask::Messages::SlowResponse*
+Arena::CreateMaybeMessage< ::TestTask::Messages::SlowResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TestTask::Messages::SlowResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TestTask::Messages::RequestForFastResponse* Arena::CreateMaybeMessage< ::TestTask::Messages::RequestForFastResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TestTask::Messages::RequestForFastResponse*
+Arena::CreateMaybeMessage< ::TestTask::Messages::RequestForFastResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TestTask::Messages::RequestForFastResponse >(arena);
 }
-template<> PROTOBUF_NOINLINE ::TestTask::Messages::RequestForSlowResponse* Arena::CreateMaybeMessage< ::TestTask::Messages::RequestForSlowResponse >(Arena* arena) {
+template<> PROTOBUF_NOINLINE ::TestTask::Messages::RequestForSlowResponse*
+Arena::CreateMaybeMessage< ::TestTask::Messages::RequestForSlowResponse >(Arena* arena) {
   return Arena::CreateMessageInternal< ::TestTask::Messages::RequestForSlowResponse >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE

@@ -2,21 +2,13 @@
 #include "src/protobuf_parser/DelimitedMessagesStreamParser.hpp"
 #include "src/protobuf_parser/helpers.hpp"
 
-#include <iostream> 
+#include <iostream>
+#include <iterator>
+#include <ostream>
+#include <string>
 
 typedef DelimitedMessagesStreamParser<TestTask::Messages::WrapperMessage> Parser;
 
 int main() {
-  TestTask::Messages::WrapperMessage wm;
-  TestTask::Messages::FastResponse* fastResponse = wm.mutable_fast_response();
-  fastResponse->set_current_date_time("hellqweqeq");
-  auto serializedData = serializeDelimited(wm); 
-  Parser parser; 
-  std::vector<char> messages;
-  messages.insert(messages.end(), serializedData->begin(), serializedData->end());
-  std::list<std::shared_ptr<const TestTask::Messages::WrapperMessage>> parsedMessages;
-  for(const char byte : messages) {
-    auto parsedMessages = parser.parse(std::string(1, byte));
-  }
-  return 0;
+	return 0;
 }

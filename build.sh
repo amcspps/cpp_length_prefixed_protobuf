@@ -12,5 +12,6 @@ if [[ $? -eq 0 ]]
 then
 	make
 fi
-mv  test/message_test .
-#rm -rf CMakeFiles cmake_install.cmake CMakeCache.txt Makefile src CTestTestfile.cmake test/
+mv protobuf_parser ..
+mv  test/message_test ..
+rm -rf CMakeFiles cmake_install.cmake CMakeCache.txt Makefile src CTestTestfile.cmake test/
