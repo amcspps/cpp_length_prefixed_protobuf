@@ -1,6 +1,4 @@
 cmake_minimum_required(VERSION 3.15.0)
-project(Tests)
-
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
@@ -18,3 +16,5 @@ target_link_libraries(
   GTest::gtest GTest::gtest_main
   Message
 )
+
+add_test(NAME MessageTests COMMAND message_test)

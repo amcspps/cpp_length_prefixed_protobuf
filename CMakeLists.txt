@@ -8,11 +8,11 @@ set(SRCS
     main.cpp
 )
 
+enable_testing()
+
 add_subdirectory(test)
 add_subdirectory(src/protobuf)
 
-
-enable_testing()
 
 add_executable(protobuf_parser ${SRCS})
 
