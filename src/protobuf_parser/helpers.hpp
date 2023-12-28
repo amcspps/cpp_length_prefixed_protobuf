@@ -29,19 +29,19 @@ PointerToConstData serializeDelimited(const Message &msg) {
 };
 
 template <typename Message>
-std::shared_ptr<Message> parseDelimited(const void *data, size_t size, size_t *bytesConsumed = 0) {
+std::shared_ptr<Message> parseDelimited(const void *data, size_t size, size_t *bytesConsumed = nullptr) {
 
   	google::protobuf::io::ArrayInputStream input(reinterpret_cast<const char *>(data), size);
     google::protobuf::io::CodedInputStream coded_input(&input);
 
     uint32_t message_size;
     if (!coded_input.ReadVarint32(&message_size)) {
-        *bytesConsumed = 0;
-        return nullptr;
+        //*bytesConsumed = 0;
+        throw std::runtime_error("error varint reading");
     }
     //correct but incomplete message case
     if (coded_input.CurrentPosition() + message_size > size) {
-        *bytesConsumed = -1;
+        //*bytesConsumed = 0;
         return nullptr;
     }
 
@@ -49,14 +49,14 @@ std::shared_ptr<Message> parseDelimited(const void *data, size_t size, size_t *b
 
     Message parsed_message;
     if (!parsed_message.ParseFromCodedStream(&coded_input)) {
-        *bytesConsumed = 0;
-        return nullptr;
+        //*bytesConsumed = 0;
+        throw std::runtime_error("parse from coded stream failed");
     }
 
     coded_input.PopLimit(message_data);
 
     *bytesConsumed = coded_input.CurrentPosition();
-    return std::make_shared<Message>(std::move(parsed_message));
+    return std::make_shared<Message>(parsed_message);
 }
 
 #endif /* SRC_PROTOBUF_PARSER_HELPERS_H_ */

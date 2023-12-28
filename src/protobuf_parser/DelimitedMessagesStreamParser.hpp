@@ -18,15 +18,14 @@ public:
 
 		while (!m_buffer.empty()) {
 			std::shared_ptr<MessageType> parsedMessage = parseDelimited<MessageType>(m_buffer.data(), m_buffer.size(), &bytesConsumed);
-			if (parsedMessage) {
-				parsedMessages.push_back(parsedMessage);
-				m_buffer.erase(m_buffer.begin(), m_buffer.begin() + bytesConsumed);
-			}
-			else if (!m_buffer.empty() && bytesConsumed == -1) {
+			if(!parsedMessage) {
 				break;
-			} else {
-				throw std::runtime_error("Error parsing data");
 			}
+			else {
+				parsedMessages.push_back(parsedMessage);
+			 	m_buffer.erase(m_buffer.begin(), m_buffer.begin() + bytesConsumed);
+			}
+			
 		}
 		return parsedMessages;
 }

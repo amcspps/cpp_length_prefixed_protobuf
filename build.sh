@@ -14,4 +14,4 @@ then
 fi
 mv protobuf_parser ..
 mv  test/message_test ..
-rm -rf CMakeFiles cmake_install.cmake CMakeCache.txt Makefile src CTestTestfile.cmake test/
+#rm -rf CMakeFiles cmake_install.cmake CMakeCache.txt Makefile src CTestTestfile.cmake test/
