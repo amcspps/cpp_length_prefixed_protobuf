@@ -1,5 +1,5 @@
-#include <protobuf_parser/helpers.hpp>
-#include <protobuf/message.pb.h>
+#include "../src/protobuf_parser/helpers.hpp"
+#include "../src/protobuf/message.pb.h"
 
 #include <gtest/gtest.h>
 
@@ -30,13 +30,17 @@ TEST(ParseDelimited, NullDataTest)
 
   size_t bytesConsumed = 0;
 
-  delimited = parseDelimited<TestTask::Messages::WrapperMessage>(
+  EXPECT_THROW(
+    delimited = parseDelimited<TestTask::Messages::WrapperMessage>(
                 nullptr,
                 0,
                 &bytesConsumed
-              );
+              ),
+    std::runtime_error
+  );
 
   ASSERT_TRUE(delimited == nullptr);
+  
   EXPECT_EQ(bytesConsumed, 0);
 }
 
@@ -46,11 +50,14 @@ TEST(ParseDelimited, EmptyDataTest)
 
   size_t bytesConsumed = 0;
 
-  delimited = parseDelimited<TestTask::Messages::WrapperMessage>(
+  EXPECT_THROW(
+    delimited = parseDelimited<TestTask::Messages::WrapperMessage>(
                 "",
                 0,
                 &bytesConsumed
-              );
+              ),
+    std::runtime_error
+  );
 
   ASSERT_TRUE(delimited == nullptr);
   EXPECT_EQ(bytesConsumed, 0);
